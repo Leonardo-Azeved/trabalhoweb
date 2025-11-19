@@ -32,7 +32,7 @@ Site institucional sobre o Dodge Durango, apresentando informações sobre o ve�
 
 1. Clone o repositório ou faça o download dos arquivos:
 ```bash
-git clone [URL_DO_REPOSITORIO]
+git clone [https://github.com/Leonardo-Azeved/trabalhoweb.git]
 ```
 
 2. Navegue até a pasta do projeto:
