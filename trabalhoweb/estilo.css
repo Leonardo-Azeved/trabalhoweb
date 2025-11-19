@@ -1,0 +1,399 @@
+/* reset básico para remover margens/paddings e manter consistência */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* corpo principal com largura total e altura dinâmica */
+.conteiner {
+    background: lightyellow;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* barra superior mantém fundo alinhado com o restante */
+.nav {
+    background: lightyellow;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+}
+
+/* nav fixo, ocupando toda a largura para facilitar a navegação */
+.nav2 {
+    width: 100%;
+    max-width: 1200px;
+    background: #1C1C1C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    padding: 0 20px;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+/* logo ajustado para ficar proporcional em telas menores */
+.nav2 img {
+    width: 120px;
+}
+
+/* lista de links com espaçamento uniforme */
+.links {
+    color: aliceblue;
+    font-size: large;
+    display: flex;
+    gap: 8px;
+    background-color: transparent;
+}
+
+/* estilo base dos links */
+.links a {
+    padding: 8px 18px;
+    border-radius: 15px;
+    color: white;
+}
+
+/* efeito hover para reforçar o feedback */
+.links a:hover {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.links2 {
+    background-color: black;
+}
+
+.links a:link,
+.links a:visited {
+    color: white;
+    text-align: center;
+}
+
+.links a:active {
+    background-color: darkgrey;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* corpo central com cor de fundo para destacar o conteúdo */
+.corpo {
+    width: 100%;
+    color: aliceblue;
+    background-color: rgb(28, 28, 27);
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.corpo2 {
+    width: 80%;
+    max-width: 1200px;
+    text-align: left;
+    background: #363636;
+}
+
+/* grid de cards para as imagens principais */
+.img {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.img2 {
+    width: 30%;
+    min-width: 250px;
+}
+
+.img2 img {
+    width: 100%;
+}
+
+.carrocapa img {
+    width: 100%;
+}
+
+.px18 {
+    padding-left: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.px16 {
+    font-size: 16px;
+    padding: 15px 20px;
+}
+
+.sopx16 {
+    font-size: 16px;
+}
+
+.saibamais {
+    color: indianred;
+    display: flex;
+    background-color: transparent;
+    justify-content: flex-end;
+}
+
+/* bloco informativo com texto e vídeo lado a lado */
+.corpo3 {
+    color: white;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    border: 1px solid #3f3f3f;
+    flex-wrap: wrap;
+}
+
+.corpo3 p {
+    flex: 1;
+    min-width: 250px;
+    padding: 30px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.corpo4 {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid #3f3f3f;
+    padding: 10px;
+}
+
+.corpo4 iframe {
+    width: 100%;
+    min-height: 260px;
+}
+
+/* imagens de apoio nos blocos de detalhes */
+.corpo6 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.corpo6 img {
+    border: 1px solid #3f3f3f;
+    width: 100%;
+    max-width: 320px;
+}
+
+.corpo5 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.border16px {
+    font-size: 16px;
+    border: 1px solid #3f3f3f;
+    padding: 10px;
+    text-align: center;
+}
+
+/* âncora para voltar ao topo alinhada à direita */
+.voltartopo {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+
+.marg {
+    flex: 1;
+    font-size: 16px;
+    border: 1px solid #3f3f3f;
+    padding: 15px;
+}
+
+.voltartopo a {
+    background-color: slategrey;
+    padding: 8px 14px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.voltartopo a:hover {
+    background-color: dimgrey;
+    text-decoration: underline;
+}
+
+/* formulário com layout em coluna e inputs responsivos */
+.formulario-conteiner {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 20px;
+}
+
+.formulario {
+    padding: 15px;
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    width: 100%;
+    border: white 2px solid;
+}
+
+.formulario img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.form-1,
+.form-2,
+.form-3,
+.form-4 {
+    border: white 2px solid;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-1 input,
+.form-3 input,
+.form-4 textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.form-2 {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-2 label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form-4 textarea {
+    height: 120px;
+}
+
+.form-botoes {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.form-botoes button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-botoes button:first-child {
+    background-color: #228B22;
+    color: #fff;
+}
+
+.form-botoes button:last-child {
+    background-color: #8B0000;
+    color: #fff;
+}
+
+/* bloco de design final com imagem e cards */
+.disigner {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border: solid white 3px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.disigner img {
+    width: 300px;
+    max-width: 100%;
+    border: solid white 3px;
+}
+
+.cards_mae {
+    flex: 1;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: solid white 3px;
+    padding: 10px;
+}
+
+.cards img {
+    height: 100px;
+    width: 100px;
+}
+
+/* responsividade para tablets e celulares */
+@media (max-width: 900px) {
+    .nav2 {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .corpo2 {
+        width: 95%;
+    }
+
+    .img2 {
+        width: 45%;
+    }
+
+    .corpo5 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .img2 {
+        width: 100%;
+    }
+
+    .corpo3 {
+        flex-direction: column;
+    }
+
+    .form-botoes {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
